@@ -1,12 +1,9 @@
-import React from "react";
-
-function Generations() {
-    const generations = ["Gen 1", "Gen 2", "Gen 3", "Gen 4"];
+export default function Generations() {
   return (
-    <div>
-      <p>Daftar Gen 1 hingga Gen 4.</p>
+    <div className="bg-green-100 p-4 my-3 rounded">
+      <h3 className="font-semibold mb-2">Generations Component</h3>
+      <div className="space-y-2">
+      </div>
     </div>
-  );
+  )
 }
-
-export default Generations;
