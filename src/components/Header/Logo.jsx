@@ -1,7 +1,3 @@
-function Logo({ title }) {
-  return (
-    <h1 >{title}</h1>
-  );
+export default function Logo() {
+  return <div>Logo</div>;
 }
-
-export default Logo;
