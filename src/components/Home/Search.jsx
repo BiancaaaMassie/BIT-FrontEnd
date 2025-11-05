@@ -1,11 +1,7 @@
-import React from "react";
-
-function Search({ placeholder }) {
+export default function Search() {
   return (
-    <div>
-      <p>{ placeholder }</p>
+    <div className="bg-yellow-100 p-3 my-3 rounded">
+      <p className="font-medium">Search Component</p>
     </div>
-  );
+  )
 }
-
-export default Search;
