@@ -1,11 +1,7 @@
-import React from "react";
-
-const Footer = ({ text }) => {
+export default function Footer() {
   return (
-    <footer className="bg-pink-200 text-center text-gray-700 py-3 mt-4">
-      <p>{text}</p>
+    <footer className="bg-gray-300 p-4 text-center">
+      <p className="text-gray-700">[Footer Component]</p>
     </footer>
   );
-};
-
-export default Footer;
+}
