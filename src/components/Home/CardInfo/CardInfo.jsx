@@ -1,21 +1,16 @@
-import React from "react";
-import Evolution from "./Evolution";
-import TypeEffect from "./TypeEffect";
-import Logo from "./Logo";
+import Evolution from "./Evolution.jsx";
+import TypeEffect from "./TypeEffect.jsx";
+import Logo from "./Logo.jsx";
 
-function CardInfo({ name, description }) {
+export default function CardInfo() {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 w-full max-w-md text-center hover:shadow-2xl transition">
-      <h2 className="text-2xl font-semibold text-indigo-600">{name}</h2>
-      <p className="text-gray-600 mt-2 mb-4">{description}</p>
-
-      <div className="space-y-3">
-        <Evolution text="Evolution Info from Props" />
-        <TypeEffect type="Electric" />
-        <Logo text="Pokémon Logo" />
+    <div className="bg-purple-100 p-4 my-4 rounded">
+      <h3 className="font-semibold mb-2">CardInfo Component</h3>
+      <div className="space-y-2">
+        <Evolution />
+        <TypeEffect />
+        <Logo />
       </div>
     </div>
   );
 }
-
-export default CardInfo;
